@@ -22,12 +22,6 @@ user_obj = {
 
 r =requests.put (url + "/api/users/admin", data= user_obj)
 print("[TEST] PUT /api/users =>", r.status_code, r.text)
-
-lista = [1,2,3]
-
-valor 1 = "hola"
-valor 2 = "mundo"
-
 cookie = r.cookies
 user = cookie.get("user")
 
